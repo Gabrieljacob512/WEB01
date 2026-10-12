@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB1, HTML</title>
+</head>
+<body>
+    
+    <!-- títulos e suas hierarquias como ex: h1,h2,h3,... -->
+    <h1>Atividade HTML Início</h1>
+    
+    <!-- Parágrafo com estilo inline, ultilizando a marcação strong, para deixar em negrito -->
+    <p>Este é o meu <strong>primeiro parágrafo</strong> feito em HTML.</p>
+    
+    <hr>
+
+    <p>
+        Continua aprendendo HTML.<br>
+        Agora conhecendo mais tags.<br>
+        Com <a href="https://portal.uneb.br/" target="_blank"> portal da uneb </a> você vai para o portal da UNEB.
+    </p>
+
+    <!-- Imagem local carregada da pasta de assets -->
+    <img src="assets/fallout_image.png" alt="Imagem que representa jogo (do fallout)">
+
+    <!-- Imagem carregada via URL externa -->
+    <img src="https://imgs.search.brave.com/7-Z1Q5AM2L00exgFHNtpGrDn79aTR3zMz2heG72F6-g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYXJ0cy5jb20v/ZmlsZXMvMS9HYW1l/LVBORy1GcmVlLURv/d25sb2FkLTEucG5n" alt="Imagem que representa jogo na web">
+
+    <!-- Exemplo de entidade HTML para o sinal de menor -->
+    <p>Este código eu mostro o sinal de menor: &lt;</p>
+
+    <!-- Exemplo do uso da tag span para estilização inline (ele esta no video de html mas não seria CSS) -->
+    <p>O termo <span style="color: rgb(255, 145, 0);">HTML</span> em destaque.</p>
+
+    <h1>Listas, Tabelas e Formulários</h1>
+    <p>Nesta página serão apresentados exemplos de listas, tabelas e formulários.</p>
+
+    <!-- listas do tipo: não ordenada, ordenada e de definição -->
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Melão</li>
+        <li>Abacaxi</li>
+        <li>Pêra</li>
+        <li>Nectarina</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Cabeça</li>
+        <li>Ombro</li>
+        <li>Joelho</li>
+        <li>Pé</li>
+    </ol>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação</dd>
+        
+        <dt>CSS</dt>
+        <dd>Folha de estilo</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação - interação</dd>
+    </dl>
+
+    <hr>
+
+    <!-- 2. TABELA -->
+    <h2>Tabela</h2>
+    <table border="1">
+        <tr>
+            <th>Tecnologia</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Linguagem de marcação</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Folha de estilo</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Linguagem de programação - interação</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 3. FORMULÁRIO -->
+    <h2>Formulário</h2>
+    <form action="" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
