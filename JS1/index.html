@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineLog | Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 id="titulo-principal">CineLog</h1>
+            <p>Seu catálogo pessoal de filmes favoritos</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Seção de Controles (Busca, Filtro e Ordenação) -->
+        <section class="controles-painel">
+            <div class="grupo-busca">
+                <input type="text" id="busca" placeholder="Buscar filme por título...">
+            </div>
+
+            <div class="grupo-filtro">
+                <label for="filtro-genero">Gênero:</label>
+                <select id="filtro-genero">
+                    <option value="Todos">Todos</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Ficção">Ficção</option>
+                    <option value="Animação">Animação</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Crime">Crime</option>
+                </select>
+            </div>
+
+            <button id="btn-inverter">Inverter Ordem</button>
+        </section>
+
+        <!-- Informações de contagem -->
+        <section class="info-catalogo">
+            <p>Exibindo <span id="contador">0</span> filme(s)</p>
+        </section>
+
+        <!-- Grade onde os filmes serão injetados via JavaScript -->
+        <section id="catalogo" class="grid-catalogo">
+            <!-- Os cards entram aqui dinamicamente -->
+        </section>
+
+        <!-- Painel de Favoritos -->
+        <section class="painel-favoritos">
+            <h2>Meus Favoritos (<span id="contador-favoritos">0</span>)</h2>
+            <ul id="lista-favoritos">
+                <li>Nenhum filme favoritados ainda.</li>
+            </ul>
+            <button id="btn-limpar-favoritos">Limpar Favoritos</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 CineLog - Desenvolvimento Web I</p>
+    </footer>
+
+    <!-- Vinculação do script no final do body conforme a regra -->
+    <script src="script.js"></script>
+</body>
+</html>
